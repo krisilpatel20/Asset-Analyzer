@@ -1,0 +1,579 @@
+[
+  {
+    "name": "Single Asset Quant Pro Clean Fix",
+    "img": "",
+    "img_dark": "",
+    "img_light": "",
+    "description": "Cleaned single-stock dashboard with unique widgets only and table-style monthly heatmap.",
+    "allowCustomization": true,
+    "tabs": {
+      "overview": {
+        "id": "overview",
+        "name": "Overview",
+        "layout": [
+          {
+            "i": "single_asset_summary_custom_obb",
+            "x": 0,
+            "y": 0,
+            "w": 14,
+            "h": 8,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01"
+              }
+            }
+          },
+          {
+            "i": "single_asset_company_snapshot_custom_obb",
+            "x": 14,
+            "y": 0,
+            "w": 26,
+            "h": 8,
+            "state": {
+              "params": {
+                "ticker": "MSFT"
+              }
+            }
+          },
+          {
+            "i": "single_asset_price_chart_custom_obb",
+            "x": 0,
+            "y": 8,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_growth_chart_custom_obb",
+            "x": 20,
+            "y": 8,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_drawdown_chart_custom_obb",
+            "x": 0,
+            "y": 19,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_rolling_vol_chart_custom_obb",
+            "x": 20,
+            "y": 19,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_rolling_beta_chart_custom_obb",
+            "x": 0,
+            "y": 30,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_return_stats_custom_obb",
+            "x": 20,
+            "y": 30,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01"
+              }
+            }
+          }
+        ]
+      },
+      "technicals": {
+        "id": "technicals",
+        "name": "Technicals",
+        "layout": [
+          {
+            "i": "single_asset_rsi_chart_custom_obb",
+            "x": 0,
+            "y": 0,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_macd_chart_custom_obb",
+            "x": 20,
+            "y": 0,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_support_resistance_chart_custom_obb",
+            "x": 0,
+            "y": 11,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_monthly_heatmap_custom_obb",
+            "x": 20,
+            "y": 11,
+            "w": 20,
+            "h": 12,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01"
+              }
+            }
+          },
+          {
+            "i": "single_asset_risk_scorecard_custom_obb",
+            "x": 0,
+            "y": 22,
+            "w": 40,
+            "h": 10,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01",
+                "window": 63
+              }
+            }
+          }
+        ]
+      },
+      "advanced_quant": {
+        "id": "advanced_quant",
+        "name": "Advanced Quant + Regime/MR",
+        "layout": [
+          {
+            "i": "single_asset_relative_strength_chart_custom_obb",
+            "x": 0,
+            "y": 0,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01"
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_rolling_alpha_chart_custom_obb",
+            "x": 20,
+            "y": 0,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_rolling_sharpe_chart_custom_obb",
+            "x": 0,
+            "y": 11,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_rolling_sortino_chart_custom_obb",
+            "x": 20,
+            "y": 11,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "single_asset_momentum_scorecard_custom_obb",
+            "x": 0,
+            "y": 22,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "benchmark": "SPY",
+                "start_date": "2023-01-01"
+              }
+            }
+          },
+          {
+            "i": "single_asset_peer_correlation_custom_obb",
+            "x": 20,
+            "y": 22,
+            "w": 20,
+            "h": 11,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "peers": "AAPL,NVDA,GOOGL,AMZN",
+                "start_date": "2023-01-01"
+              }
+            }
+          },
+          {
+            "i": "vol_regime_chart_custom_obb",
+            "x": 0,
+            "y": 33,
+            "w": 24,
+            "h": 12,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "vol_regime_scorecard_custom_obb",
+            "x": 24,
+            "y": 33,
+            "w": 16,
+            "h": 10,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              }
+            }
+          },
+          {
+            "i": "mean_reversion_chart_custom_obb",
+            "x": 0,
+            "y": 45,
+            "w": 24,
+            "h": 12,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "mean_reversion_scorecard_custom_obb",
+            "x": 24,
+            "y": 45,
+            "w": 16,
+            "h": 10,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "window": 63
+              }
+            }
+          }
+        ]
+      },
+      "monte_carlo": {
+        "id": "monte_carlo",
+        "name": "Monte Carlo",
+        "layout": [
+          {
+            "i": "monte_carlo_paths_custom_obb",
+            "x": 0,
+            "y": 0,
+            "w": 26,
+            "h": 12,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "sim_days": 63,
+                "n_sims": 500
+              },
+              "chartView": {
+                "enabled": true,
+                "chartType": "line"
+              }
+            }
+          },
+          {
+            "i": "monte_carlo_scorecard_custom_obb",
+            "x": 26,
+            "y": 0,
+            "w": 14,
+            "h": 10,
+            "state": {
+              "params": {
+                "ticker": "MSFT",
+                "start_date": "2023-01-01",
+                "sim_days": 63,
+                "n_sims": 500
+              }
+            }
+          }
+        ]
+      }
+    },
+    "groups": [
+      {
+        "name": "Group 1",
+        "type": "param",
+        "paramName": "ticker",
+        "defaultValue": "MSFT",
+        "widgetIds": [
+          "single_asset_summary_custom_obb",
+          "single_asset_company_snapshot_custom_obb",
+          "single_asset_price_chart_custom_obb",
+          "single_asset_growth_chart_custom_obb",
+          "single_asset_drawdown_chart_custom_obb",
+          "single_asset_rolling_vol_chart_custom_obb",
+          "single_asset_rolling_beta_chart_custom_obb",
+          "single_asset_rsi_chart_custom_obb",
+          "single_asset_macd_chart_custom_obb",
+          "single_asset_support_resistance_chart_custom_obb",
+          "single_asset_return_stats_custom_obb",
+          "single_asset_monthly_heatmap_custom_obb",
+          "single_asset_risk_scorecard_custom_obb",
+          "single_asset_rolling_sharpe_chart_custom_obb",
+          "single_asset_rolling_sortino_chart_custom_obb",
+          "single_asset_rolling_alpha_chart_custom_obb",
+          "single_asset_relative_strength_chart_custom_obb",
+          "single_asset_momentum_scorecard_custom_obb",
+          "single_asset_peer_correlation_custom_obb",
+          "vol_regime_chart_custom_obb",
+          "vol_regime_scorecard_custom_obb",
+          "mean_reversion_chart_custom_obb",
+          "mean_reversion_scorecard_custom_obb",
+          "monte_carlo_paths_custom_obb",
+          "monte_carlo_scorecard_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 2",
+        "type": "param",
+        "paramName": "benchmark",
+        "defaultValue": "SPY",
+        "widgetIds": [
+          "single_asset_summary_custom_obb",
+          "single_asset_growth_chart_custom_obb",
+          "single_asset_rolling_beta_chart_custom_obb",
+          "single_asset_return_stats_custom_obb",
+          "single_asset_risk_scorecard_custom_obb",
+          "single_asset_rolling_alpha_chart_custom_obb",
+          "single_asset_relative_strength_chart_custom_obb",
+          "single_asset_momentum_scorecard_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 3",
+        "type": "param",
+        "paramName": "start_date",
+        "defaultValue": "2023-01-01",
+        "widgetIds": [
+          "single_asset_summary_custom_obb",
+          "single_asset_price_chart_custom_obb",
+          "single_asset_growth_chart_custom_obb",
+          "single_asset_drawdown_chart_custom_obb",
+          "single_asset_rolling_vol_chart_custom_obb",
+          "single_asset_rolling_beta_chart_custom_obb",
+          "single_asset_rsi_chart_custom_obb",
+          "single_asset_macd_chart_custom_obb",
+          "single_asset_support_resistance_chart_custom_obb",
+          "single_asset_return_stats_custom_obb",
+          "single_asset_monthly_heatmap_custom_obb",
+          "single_asset_risk_scorecard_custom_obb",
+          "single_asset_rolling_sharpe_chart_custom_obb",
+          "single_asset_rolling_sortino_chart_custom_obb",
+          "single_asset_rolling_alpha_chart_custom_obb",
+          "single_asset_relative_strength_chart_custom_obb",
+          "single_asset_momentum_scorecard_custom_obb",
+          "single_asset_peer_correlation_custom_obb",
+          "vol_regime_chart_custom_obb",
+          "vol_regime_scorecard_custom_obb",
+          "mean_reversion_chart_custom_obb",
+          "mean_reversion_scorecard_custom_obb",
+          "monte_carlo_paths_custom_obb",
+          "monte_carlo_scorecard_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 4",
+        "type": "param",
+        "paramName": "window",
+        "defaultValue": 63,
+        "widgetIds": [
+          "single_asset_rolling_vol_chart_custom_obb",
+          "single_asset_rolling_beta_chart_custom_obb",
+          "single_asset_risk_scorecard_custom_obb",
+          "single_asset_rolling_sharpe_chart_custom_obb",
+          "single_asset_rolling_sortino_chart_custom_obb",
+          "single_asset_rolling_alpha_chart_custom_obb",
+          "vol_regime_chart_custom_obb",
+          "vol_regime_scorecard_custom_obb",
+          "mean_reversion_chart_custom_obb",
+          "mean_reversion_scorecard_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 5",
+        "type": "param",
+        "paramName": "peers",
+        "defaultValue": "AAPL,NVDA,GOOGL,AMZN",
+        "widgetIds": [
+          "single_asset_peer_correlation_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 5",
+        "type": "param",
+        "paramName": "sim_days",
+        "defaultValue": 63,
+        "widgetIds": [
+          "monte_carlo_paths_custom_obb",
+          "monte_carlo_scorecard_custom_obb"
+        ]
+      },
+      {
+        "name": "Group 6",
+        "type": "param",
+        "paramName": "n_sims",
+        "defaultValue": 500,
+        "widgetIds": [
+          "monte_carlo_paths_custom_obb",
+          "monte_carlo_scorecard_custom_obb"
+        ]
+      }
+    ],
+    "prompts": [
+      "Analyze this stock as a single asset. Focus on risk, drawdown, and trend.",
+      "Is this ticker acting stronger or weaker than the benchmark?",
+      "What does the RSI, MACD, and risk scorecard say right now?",
+      "How do the added quant widgets rate this ticker on relative strength, rolling alpha, Sharpe, and peer correlation?"
+    ]
+  }
+]

@@ -1,0 +1,809 @@
+{
+  "single_asset_summary_custom_obb": {
+    "name": "Single Asset Summary",
+    "description": "Main control and summary widget for one ticker.",
+    "category": "Single Asset Lite",
+    "type": "markdown",
+    "endpoint": "summary",
+    "gridData": {
+      "w": 14,
+      "h": 8
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text",
+        "description": "Benchmark ticker"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      }
+    ]
+  },
+  "single_asset_company_snapshot_custom_obb": {
+    "name": "Company Snapshot",
+    "description": "Basic company and valuation fields.",
+    "category": "Single Asset Lite",
+    "type": "table",
+    "endpoint": "company_snapshot",
+    "gridData": {
+      "w": 26,
+      "h": 8
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      }
+    ]
+  },
+  "single_asset_price_chart_custom_obb": {
+    "name": "Price Chart",
+    "description": "Adjusted close price chart.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "price_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_growth_chart_custom_obb": {
+    "name": "Growth of $1",
+    "description": "Performance vs benchmark.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "growth_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_drawdown_chart_custom_obb": {
+    "name": "Drawdown",
+    "description": "Peak-to-trough decline chart.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "drawdown_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_rolling_vol_chart_custom_obb": {
+    "name": "Rolling Volatility",
+    "description": "Annualized rolling volatility.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "rolling_vol_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number",
+        "description": "Rolling window in trading days"
+      }
+    ]
+  },
+  "single_asset_rolling_beta_chart_custom_obb": {
+    "name": "Rolling Beta",
+    "description": "Rolling beta vs benchmark.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "rolling_beta_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number"
+      }
+    ]
+  },
+  "single_asset_rsi_chart_custom_obb": {
+    "name": "RSI (14)",
+    "description": "Momentum oscillator.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "rsi_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_macd_chart_custom_obb": {
+    "name": "MACD",
+    "description": "Trend momentum chart.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "macd_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_support_resistance_chart_custom_obb": {
+    "name": "Support / Resistance",
+    "description": "20d support and resistance with 50d trend.",
+    "category": "Single Asset Lite",
+    "type": "chart",
+    "endpoint": "support_resistance_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_return_stats_custom_obb": {
+    "name": "Return Stats",
+    "description": "Core return and risk statistics.",
+    "category": "Single Asset Lite",
+    "type": "table",
+    "endpoint": "return_stats",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_monthly_heatmap_custom_obb": {
+    "name": "Monthly Heatmap",
+    "description": "Monthly returns matrix table.",
+    "category": "Single Asset Lite",
+    "type": "table",
+    "endpoint": "monthly_heatmap_table",
+    "gridData": {
+      "w": 20,
+      "h": 12
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_risk_scorecard_custom_obb": {
+    "name": "Risk Scorecard",
+    "description": "Simple risk regime checks.",
+    "category": "Single Asset Lite",
+    "type": "table",
+    "endpoint": "risk_scorecard",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number"
+      }
+    ]
+  },
+  "single_asset_rolling_sharpe_chart_custom_obb": {
+    "name": "Rolling Sharpe",
+    "description": "Rolling Sharpe ratio (rf=0).",
+    "category": "Single Asset Lite+",
+    "type": "chart",
+    "endpoint": "rolling_sharpe_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number"
+      }
+    ]
+  },
+  "single_asset_rolling_sortino_chart_custom_obb": {
+    "name": "Rolling Sortino",
+    "description": "Rolling Sortino ratio (rf=0).",
+    "category": "Single Asset Lite+",
+    "type": "chart",
+    "endpoint": "rolling_sortino_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number"
+      }
+    ]
+  },
+  "single_asset_rolling_alpha_chart_custom_obb": {
+    "name": "Rolling Alpha",
+    "description": "Rolling annualized alpha vs benchmark.",
+    "category": "Single Asset Lite+",
+    "type": "chart",
+    "endpoint": "rolling_alpha_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number"
+      }
+    ]
+  },
+  "single_asset_relative_strength_chart_custom_obb": {
+    "name": "Relative Strength",
+    "description": "Price ratio vs benchmark.",
+    "category": "Single Asset Lite+",
+    "type": "chart",
+    "endpoint": "relative_strength_chart",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_momentum_scorecard_custom_obb": {
+    "name": "Momentum Scorecard",
+    "description": "21d/63d/126d/252d momentum vs benchmark.",
+    "category": "Single Asset Lite+",
+    "type": "table",
+    "endpoint": "momentum_scorecard",
+    "gridData": {
+      "w": 20,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "benchmark",
+        "value": "SPY",
+        "label": "Benchmark",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "single_asset_peer_correlation_custom_obb": {
+    "name": "Peer Correlation",
+    "description": "Correlation matrix vs selected peers.",
+    "category": "Single Asset Lite+",
+    "type": "table",
+    "endpoint": "peer_correlation",
+    "gridData": {
+      "w": 40,
+      "h": 11
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text"
+      },
+      {
+        "paramName": "peers",
+        "value": "AAPL,NVDA,GOOGL,AMZN",
+        "label": "Peers",
+        "type": "text"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text"
+      }
+    ]
+  },
+  "vol_regime_chart_custom_obb": {
+    "name": "Volatility Regime Model",
+    "description": "Rolling realized volatility with low/medium/high regime thresholds.",
+    "category": "Single Asset Quant Pro",
+    "type": "chart",
+    "endpoint": "vol_regime_chart",
+    "gridData": {
+      "w": 24,
+      "h": 12
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number",
+        "description": "Rolling window"
+      }
+    ]
+  },
+  "vol_regime_scorecard_custom_obb": {
+    "name": "Volatility Regime Scorecard",
+    "description": "Current regime and regime statistics.",
+    "category": "Single Asset Quant Pro",
+    "type": "table",
+    "endpoint": "vol_regime_scorecard",
+    "gridData": {
+      "w": 16,
+      "h": 10
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number",
+        "description": "Rolling window"
+      }
+    ]
+  },
+  "mean_reversion_chart_custom_obb": {
+    "name": "Mean Reversion Z-Score",
+    "description": "Z-score of price versus rolling mean with \u00b12 bands.",
+    "category": "Single Asset Quant Pro",
+    "type": "chart",
+    "endpoint": "mean_reversion_chart",
+    "gridData": {
+      "w": 24,
+      "h": 12
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number",
+        "description": "Rolling window"
+      }
+    ]
+  },
+  "mean_reversion_scorecard_custom_obb": {
+    "name": "Mean Reversion Scorecard",
+    "description": "Current z-score, distance from mean, and half-life estimate.",
+    "category": "Single Asset Quant Pro",
+    "type": "table",
+    "endpoint": "mean_reversion_scorecard",
+    "gridData": {
+      "w": 16,
+      "h": 10
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "window",
+        "value": 63,
+        "label": "Window",
+        "type": "number",
+        "description": "Rolling window"
+      }
+    ]
+  },
+  "monte_carlo_paths_custom_obb": {
+    "name": "Monte Carlo Paths",
+    "description": "Simulated price paths and percentile bands.",
+    "category": "Single Asset Quant Pro",
+    "type": "chart",
+    "endpoint": "monte_carlo_paths",
+    "gridData": {
+      "w": 26,
+      "h": 12
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "sim_days",
+        "value": 63,
+        "label": "Sim Days",
+        "type": "number",
+        "description": "Forward trading days"
+      },
+      {
+        "paramName": "n_sims",
+        "value": 500,
+        "label": "# Sims",
+        "type": "number",
+        "description": "Number of simulations"
+      }
+    ]
+  },
+  "monte_carlo_scorecard_custom_obb": {
+    "name": "Monte Carlo Scorecard",
+    "description": "Terminal distribution and hit probabilities.",
+    "category": "Single Asset Quant Pro",
+    "type": "table",
+    "endpoint": "monte_carlo_scorecard",
+    "gridData": {
+      "w": 14,
+      "h": 10
+    },
+    "source": "Yahoo Finance via yfinance",
+    "params": [
+      {
+        "paramName": "ticker",
+        "value": "MSFT",
+        "label": "Ticker",
+        "type": "text",
+        "description": "Ticker symbol"
+      },
+      {
+        "paramName": "start_date",
+        "value": "2023-01-01",
+        "label": "Start Date",
+        "type": "text",
+        "description": "Start date YYYY-MM-DD"
+      },
+      {
+        "paramName": "sim_days",
+        "value": 63,
+        "label": "Sim Days",
+        "type": "number",
+        "description": "Forward trading days"
+      },
+      {
+        "paramName": "n_sims",
+        "value": 500,
+        "label": "# Sims",
+        "type": "number",
+        "description": "Number of simulations"
+      }
+    ]
+  }
+}
